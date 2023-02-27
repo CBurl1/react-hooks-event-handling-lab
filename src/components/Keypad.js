@@ -1,8 +1,15 @@
-// Code Keypad Component Here
 
 function Keypad (){
+
+    const handleChange = (e) => {
+        console.log(e.target.value)
+    }
     return (
-        <div></div>
+        <div>
+            <button>
+            <input type="text" placeholder="password" onChange={handleChange}/>
+            </button>
+        </div>
     )
 }
 
